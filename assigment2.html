@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Site</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Review Central</h1>
+        <nav>
+            <ul>
+                <li><a href="#latest_reviews"> Latest Reviews</a></li>
+                <li><a href="#top rated"> Top Rated</a></li>
+                <li><a href="#contact me"> Contact me</a></li>
+                <li><a href="#about me">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="latest reviews">
+        <h2>Latest Reviews</h2>
+        <div>
+            <h3>Movie Title 1</h3>
+            <img src="movie1.jpg" alt="Movie 1 poster">
+            <p>This video is about a Turkish teacher who speaks about the people dreams and respects!</p> 
+            <video width="400"height="300" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">   
+            </video>
+            <a href="#review1">Read Full Review</a>
+        </div>
+    </section>
+    <section id="top rated movies">
+        <h2>Top Rated Movies</h2>
+        <table cellspacing="20">
+            <tr>
+                <th>Rank</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Rating</th>
+                <th>Genre</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>top movie 1</td>
+                <td>2020</td>
+                <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                <td>action</td>
+            </tr>
+        </table>
+    </section>
+    <aside>
+        <h3>Reiated Links</h3>
+        <ul>
+            <li><a href="#upcoming_movies">Upcoming Movies</a></li>
+            <li><a href="#interviews_with_directors">Interviews with Directors</a></li>
+        </ul>
+    </aside>
+    <section id="contact_me">
+        <h2>Contact Me</h2>
+        <form action="index.html" method="post">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="your name"><br>
+            <label for="email">Email:</label>
+            <input type="text" id="Email" name="Name" placeholder="Enter your Email"><br>
+            <label for="genre">Favorite Movie Genre:</label>
+        <select id="genre" name="genre">
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="comedy">Comedy</option>
+            <option value="sci-fi">Sci-Fi</option>
+        </select><br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"  rows="3"></textarea><br>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe for newslatter">Subscribe For Newslatter</label><br>
+        <input type="submit" value="send">
+        </form> 
+    </section>
+    <footer>
+        <p>© 2024 Movie Reviews Site</p>
+    </footer>
+</body>
+</html>
